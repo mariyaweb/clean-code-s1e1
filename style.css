@@ -13,11 +13,11 @@
   text-align: right;
 }
 
-.matrix .img {
+.matrix__img {
   width: 100%;
 }
 
-.matrix .matrix-link {
+.matrix .matrix__link {
   font-family: fantasy, cursive;
 }
 
@@ -35,14 +35,14 @@
   margin: 0 auto 0;
 }
 
-.task-input,
-.task-label {
+.input_txt,
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.section__field {
   display: flex;
 }
 
@@ -51,12 +51,12 @@
   padding: 0px;
 }
 
-.list-item,
-.title {
+.list__item,
+.section__title {
   list-style: none;
 }
 
-.task-input,
+.input_txt,
 .btn {
   outline: none;
 }
@@ -77,8 +77,8 @@
 
 /* Heading */
 
-.title,
-.label {
+.section__title,
+.section__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +88,7 @@
   text-transform: uppercase;
 }
 
-.task-input {
+.input_txt {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,13 +101,13 @@
   color: #888;
 }
 
-.task-input:focus {
+.input_txt:focus {
   color: #333;
 }
 
 /* New Task */
 
-.label {
+.section__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -118,7 +118,7 @@
 
 /* Task list */
 
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -128,53 +128,53 @@
   align-items: center;
 }
 
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
 
-.task-label {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-input {
+.input_txt {
   width: 226px;
 }
 
-.btn.btn-delete .img {
+.btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.btn-delete .img:hover {
+.btn__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-.list#completed-tasks .task-label {
+.list#completed-tasks .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.list-item .task-input {
+.list__item .input_txt {
   display: none;
 }
 
-.edit .task-input {
+.task_edit .input_txt {
   display: inline-block;
   width: 224px;
 }
 
-.edit .task-label {
+.task_edit .task__label {
   display: none;
 }
